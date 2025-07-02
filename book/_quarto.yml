@@ -1,0 +1,35 @@
+project:
+  output-dir: docs
+  type: book
+  
+lang: zh
+
+book:
+  title: "Ubuntu 笔记"
+  author: "shiyu-hong"
+  date: today
+  date-format: long
+  chapters:
+    - index.qmd
+    - intro.qmd
+    
+    - part: "如何配置 Ubuntu 常用软件"
+      chapters: 
+        - "content/chap01_configure_common_software_for_ubuntu/apt.qmd"
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: cyborg
+  pdf:
+    documentclass: book
+    include-in-header: "tex/preamble.tex"
+    geometry:
+      - tmargin=2.5cm
+      - bmargin=2.5cm
+      - lmargin=3.0cm
+      - rmargin=2.0cm
+
+editor: visual
+

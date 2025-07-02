@@ -1,0 +1,13 @@
+# Ubuntu 国内镜像源配置笔记
+
+## 一、清华大学镜像源配置方案
+
+-   软件源替换操作：请参照清华大学开源软件镜像站官方文档完成软件源替换：[Ubuntu 镜像源使用帮助](https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/)
+
+-   软件仓库更新流程：执行以下命令序列更新软件包
+
+``` bash
+sudo apt clean
+sudo apt update
+sudo apt upgrade -y
+```
